@@ -1,0 +1,93 @@
+:root {
+  --primary-color: #f0e3ca;
+  --font-primary: #1b1a17;
+}
+
+body {
+  box-sizing: border-box;
+  background-color: var(--primary-color);
+  font-size: 16px;
+  color: var(--font-primary);
+  font-family: "Open Sans", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Vertikálne */
+  align-items: center; /* Horizontálne */
+  height: 100vh;
+}
+
+h1 {
+  font-size: 2rem;
+  text-align: center;
+  margin-top: 0;
+}
+
+main {
+  padding: 5% 10%;
+}
+
+#container {
+  display: grid;
+  gap: 10px;
+  text-align: center;
+  justify-items: center;
+  font-weight: 900;
+  margin: auto;
+}
+
+label {
+  font-weight: normal;
+  padding: 0 0 8% 0;
+}
+
+.box-1 {
+  display: grid;
+  margin-bottom: 5%;
+  background-color: var(--primary-color);
+  border-color: var(--font-primary);
+  max-width: 250px;
+}
+
+.box-2 {
+  border: var(--font-primary);
+  border-style: solid;
+  border-radius: 20px;
+  padding: 0.8em 2em;
+  margin-bottom: 2%;
+  max-width: 250px;
+  background-color: var(--primary-color);
+}
+
+input[type="text"] {
+  background-color: var(--primary-color);
+  outline: none;
+  font-size: 1.5em;
+  text-align: center;
+  border: var(--font-primary);
+  border-bottom: solid;
+  padding: 0.8em 0 0.3em;
+}
+
+::placeholder {
+  color: gray;
+}
+
+input[type="button"] {
+  border: none;
+  outline: none;
+  font-size: 1.5em;
+  text-align: center;
+  background-color: var(--primary-color);
+}
+
+input:-webkit-autofill {
+  background-color: transparent !important;
+  box-shadow: 0 0 0 50px var(--primary-color) inset;
+  -webkit-box-shadow: 0 0 0 50px var(--primary-color) inset;
+}
+
+.výsledok {
+  font-size: 1.5em;
+  font-weight: normal;
+  max-width: 400px;
+}
