@@ -45,7 +45,6 @@ label {
   margin-bottom: 5%;
   background-color: var(--primary-color);
   border-color: var(--font-primary);
-  max-width: 250px;
 }
 
 .box-2 {
@@ -54,7 +53,6 @@ label {
   border-radius: 20px;
   padding: 0.8em 2em;
   margin-bottom: 2%;
-  max-width: 250px;
   background-color: var(--primary-color);
 }
 
@@ -80,14 +78,32 @@ input[type="button"] {
   background-color: var(--primary-color);
 }
 
+.výsledok {
+  font-size: 1.5em;
+  font-weight: normal;
+  max-width: 400px;
+}
+
+/* Google Chrome */
+
+@media screen and (-webkit-min-device-pixel-ratio: 0) and (min-resolution: 0.001dpcm) {
+  .box-1,
+  .box-2 {
+    max-width: 250px;
+  }
+}
+
 input:-webkit-autofill {
   background-color: transparent !important;
   box-shadow: 0 0 0 50px var(--primary-color) inset;
   -webkit-box-shadow: 0 0 0 50px var(--primary-color) inset;
 }
 
-.výsledok {
-  font-size: 1.5em;
-  font-weight: normal;
-  max-width: 400px;
+/* Mozilla Firefox */
+
+@-moz-document url-prefix() {
+  .box-1,
+  .box-2 {
+    max-width: none;
+  }
 }
