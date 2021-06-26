@@ -31,4 +31,3 @@ function zmenaFarby() {
 }
     
 changeInputColor.addEventListener("click", zmenaFarby)
-

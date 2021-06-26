@@ -9,6 +9,9 @@ body {
   font-size: 16px;
   color: var(--font-primary);
   font-family: "Open Sans", sans-serif;
+}
+
+main {
   display: flex;
   flex-direction: column;
   justify-content: center; /* Vertikálne */
@@ -16,14 +19,33 @@ body {
   height: 100vh;
 }
 
+.navigácia {
+  display: flex;
+  justify-content: center;
+}
+
+.a-navigácia {
+  margin-right: 1em;
+  color: var(--font-primary);
+}
+.a-navigácia-active {
+  margin-right: 1em;
+  text-decoration: none;
+  color: var(--font-primary);
+  cursor: default;
+}
+
+.a-navigácia:visited {
+  color: var(--font-primary);
+}
+
 h1 {
   font-size: 2rem;
-  text-align: center;
   margin-top: 0;
 }
 
 main {
-  padding: 5% 10%;
+  padding: 2% 10%;
 }
 
 #container {
@@ -33,6 +55,12 @@ main {
   justify-items: center;
   font-weight: 900;
   margin: auto;
+}
+
+.p-container {
+  font-weight: normal;
+  max-width: 36em;
+  text-align: left;
 }
 
 label {
