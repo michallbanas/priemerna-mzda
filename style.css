@@ -104,6 +104,7 @@ input[type="button"] {
   font-size: 1.5em;
   text-align: center;
   background-color: var(--primary-color);
+  -webkit-appearance: none;
 }
 
 .výsledok {
@@ -133,5 +134,15 @@ input:-webkit-autofill {
   .box-1,
   .box-2 {
     max-width: none;
+  }
+}
+
+@media only screen and (max-width: 688px) {
+  h1 {
+    font-size: 1.8em;
+  }
+
+  .a-navigácia, .a-navigácia-active {
+    font-size: 14px;
   }
 }
