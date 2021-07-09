@@ -19,23 +19,23 @@ main {
   height: 100vh;
 }
 
-.navigácia {
+.navigation {
   display: flex;
   justify-content: center;
 }
 
-.a-navigácia {
+.a-navigation {
   margin-right: 1em;
   color: var(--font-primary);
 }
-.a-navigácia-active {
+.a-navigation-active {
   margin-right: 1em;
   text-decoration: none;
   color: var(--font-primary);
   cursor: default;
 }
 
-.a-navigácia:visited {
+.a-navigation:visited {
   color: var(--font-primary);
 }
 
@@ -142,7 +142,7 @@ input:-webkit-autofill {
     font-size: 1.8em;
   }
 
-  .a-navigácia, .a-navigácia-active {
+  .a-navigation, .a-navigation-active {
     font-size: 14px;
   }
 }

@@ -4,15 +4,16 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="src/style.css" />
+    <script defer src="src/priemerna-mzda.js"></script>
     <title>Priemerná mzda</title>
   </head>
   <body>
-    <nav class="navigácia">
-      <a class="a-navigácia" href="https://www.michalbanas.dev">michalbanas.dev</a>
-      <a class="a-navigácia-active" href="https://michallbanas.github.io/priemerna-mzda/">priemerná-mzda</a>
-      <a class="a-navigácia" href="https://michallbanas.github.io/password-generator/">password-generator</a>
-      <a class="a-navigácia" href="https://michallbanas.github.io/hra-mdn/">uhádni-číslo</a>
+    <nav class="navigation">
+      <a class="a-navigation" href="https://www.michalbanas.dev">michalbanas.dev</a>
+      <a class="a-navigation-active" href="https://michallbanas.github.io/priemerna-mzda/">priemerná-mzda</a>
+      <a class="a-navigation" href="https://michallbanas.github.io/password-generator/">password-generator</a>
+      <a class="a-navigation" href="https://michallbanas.github.io/hra-mdn/">uhádni-číslo</a>
     </nav>
     <main>
       <form id="container">
@@ -21,21 +22,20 @@
            A tak som vytvoril túto šikovnú, jednoduchú stránku, ktorá má jedinú úlohu, a to vypočítať to za nás. Aká je teda vaša mzda?
         </p>
         <div class="box-1">
-          <label for="vyplň-mzdu"></label>
+          <label for="fill-salary"></label>
           <input
             type="text"
-            id="vyplň-mzdu"
-            class="mzda"
+            id="fill-salary"
+            class="salary"
             placeholder="Napríklad 750"
           />
         </div>
         <div class="box-2">
-          <label for="výpočet-percentá"></label>
-          <input type="button" id="výpočet-percentá" value="Vypočítať" />
+          <label for="calculation-percentage"></label>
+          <input type="button" id="calculation-percentage" value="Vypočítať" />
         </div>
-        <p class="výsledok"></p>
+        <p class="result"></p>
       </form>
     </main>
-    <script src="priemerna-mzda.js"></script>
   </body>
 </html>
